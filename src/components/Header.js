@@ -7,8 +7,8 @@ const Header = () => {
         return () => clearInterval(counter);
     });
     return <header>
-        <p><a href={'https://resium.darwineducation.com/'}>Resium</a> + <a href={'https://github.com/uber/h3-js'}>H3</a> Demo</p>
-        <p>click a point to see its associated hexagon and all other points in the hexagon</p>
+        <p>Geolocation Demo</p>
+        <p>move around and watch the point follow your location</p>
     </header>;
 };
 

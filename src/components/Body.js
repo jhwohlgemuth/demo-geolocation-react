@@ -69,9 +69,11 @@ const Body = () => {
         homeButton={false}
         infoBox={false}
         navigationHelpButton={false}
+        sceneMode={Cesium.SceneMode.SCENE2D}
         selectionIndicator={false}
-        timeline={false} ref={e => viewer = e ? e.cesiumElement : undefined}>
-        {randomPositions.map((position, index) => <Entity
+        timeline={false}
+        ref={e => viewer = e ? e.cesiumElement : undefined}>
+        {/* {randomPositions.map((position, index) => <Entity
             key={index}
             description={index}
             onClick={onClick}
@@ -80,7 +82,7 @@ const Body = () => {
                 pixelSize: 10,
                 color: selected.includes(index) ? Color.DEEPPINK : Color.CYAN
             }}
-        />)}
+        />)} */}
         {h3IsValid(index) && <Entity
             description="H3 Hexagon"
             polygon={{hierarchy: fromDegreesArray(getBoundary(index)), material}}
